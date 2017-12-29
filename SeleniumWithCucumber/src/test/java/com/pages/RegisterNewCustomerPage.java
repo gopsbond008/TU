@@ -35,7 +35,7 @@ public class RegisterNewCustomerPage extends PageObjectRepo {
         action.sendElement(LASTNAME_TEXTBOX, lastname);
         action.sendElement(PASSWORD_TEXTBOX, password);
         action.sendElement(CONFIRM_PASSWORD_TEXTBOX, confirmpassword);
-        action.clickElement(TERMS_CHECKBOX);    
+        action.clickElement(TERMS_CHECKBOX);
         action.clickElement(REGISTER_COMPLETE_BUTTON);
         systemLib.waitForSeconds();
 
