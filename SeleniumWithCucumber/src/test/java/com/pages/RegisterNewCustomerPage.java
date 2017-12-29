@@ -14,6 +14,11 @@ public class RegisterNewCustomerPage extends PageObjectRepo {
     private static By LASTNAME_TEXTBOX = By.cssSelector("#register_lastName");
     private static By PASSWORD_TEXTBOX = By.cssSelector("#password");
     private static By CONFIRM_PASSWORD_TEXTBOX = By.cssSelector("#register_checkPwd");
+
+  //  private static By TERMS_CHECKBOX = By.cssSelector("input[name='termsAndConditions']");
+
+
+
     private static By TERMS_CHECKBOX = By.cssSelector("input[name='termsAndConditions']");
     private static By REGISTER_COMPLETE_BUTTON = By.cssSelector(".registerButton");
     private static By verifyRegistrationConfirmationPage  = By.cssSelector(".content-container h2");
@@ -30,7 +35,7 @@ public class RegisterNewCustomerPage extends PageObjectRepo {
         action.sendElement(LASTNAME_TEXTBOX, lastname);
         action.sendElement(PASSWORD_TEXTBOX, password);
         action.sendElement(CONFIRM_PASSWORD_TEXTBOX, confirmpassword);
-        action.clickElement(TERMS_CHECKBOX);
+        action.clickElement(TERMS_CHECKBOX);    
         action.clickElement(REGISTER_COMPLETE_BUTTON);
         systemLib.waitForSeconds();
 
